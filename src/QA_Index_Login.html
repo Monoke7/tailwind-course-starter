@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/QALogin.css" rel="stylesheet" />
+    <script defer src="./assets/fontawesome/js/solid.min.js"></script>
+    <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
+</head>
+
+<body class="dark h-full flex-row inline-flex">
+    <main style="background-image: url('./assets/images/bg-account.jpg')" class="w-screen h-screen flex flex-col items-center justify-center bg-zinc-200 dark:bg-zinc-900 ">
+        <div class="flex flex-col items-center justify-center bg-cover bg-fixed bg-center">
+            <div class="rounded-xl bg-white/30 py-2 px-4 text-center backdrop-blur-md w-[150%]">
+                <form>
+                    <div class="mb-6 mt-2">
+                        <div class="flex flex-col items-end justify-end">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-red-900 dark:text-red-300">New(v2.0)</span>
+                        </div>
+
+                        <h4 class="block mb-2 text-lg font-bold text-sky-900 dark:text-white">Sign In to continue</h4>
+                        <small class="block mb-2 text-xs font-medium items-center px-2.5 py-0.5 text-sky-900 dark:text-white">Please use your email address and password</small>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="email" class="block mb-2 text-sm font-medium text-sky-900 dark:text-white">Your email</label>
+                        <input type="email" id="email" class="border border-white/40 bg-white/30 font-bold text-sky-900 placeholder-zinc-500 text-sm rounded-lg caret-pink-500 outline-1 outline-pink-500 backdrop-blur-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="name@illation.co.za" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="block mb-2 text-sm font-medium text-sky-900 dark:text-white">Your password</label>
+                        <input type="password" id="password" class="border border-white/40 bg-white/30 font-bold text-sky-900 placeholder-zinc-500 text-sm rounded-lg caret-pink-500 outline-1 outline-pink-500 backdrop-blur-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            required>
+                    </div>
+                    <button type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">SIGN IN</button>
+                    <button type="button" class="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                    <div class="flex w-14 items-center gap-[0.5px] justify-center">
+                        <div class="h-2 w-1 animate-wavey rounded-full bg-pink-300"></div>
+                        <div class="h-3 w-1 animate-wavey rounded-full bg-pink-200 animation-delay-200"></div>
+                        <div class="h-4 w-1 animate-wavey rounded-full bg-pink-100 animation-delay-[150ms]"></div>
+                        <div class="h-3 w-1 animate-wavey rounded-full bg-pink-200 animation-delay-300"></div>
+                        <div class="h-2 w-1 animate-wavey rounded-full bg-pink-300 animation-delay-[75ms]"></div>
+                    </div>
+                </button>
+
+                    <div id="alert-2" class="flex p-4 mb-4 text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                        <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Info</span>
+                        <div class="ml-3 text-sm font-medium">
+                            A simple info alert with an.
+                        </div>
+                    </div>
+                    <div id="alert-3" class="flex p-4 mb-4 text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                        <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Info</span>
+                        <div class="ml-3 text-sm font-medium">
+                            A simple info alert with an <a href="#" class="font-semibold underline hover:no-underline">example link</a>. Give it a click if you like.
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <footer class="mt-2 p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+                <small>Copyright &copy; @DateTime.Now.Year <a href="https://Illation.co.za/" target="_blank" class="hover:underline">Illation™</a>. All rights reserved.</small>
+            </span>
+        </footer>
+    </main>
+
+
+    <div data-dial-init class="fixed left-6 bottom-6 group">
+        <button id="dark-mode-toggle" type="button" data-dial-toggle="speed-dial-menu-click" data-dial-trigger="click" aria-controls="speed-dial-menu-click" aria-expanded="false" class="flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-full w-14 h-14 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">
+            <i class="fa-solid fa-sun dark:hidden"></i>
+                <i class="fa-solid fa-moon hidden dark:inline"></i>
+                <span class="sr-only">Open actions menu</span>
+        </button>
+    </div>
+
+
+</body>
+<script>
+    let doc = document.getElementsByTagName("body");
+
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    darkModeToggle.addEventListener("click", () => {
+        if (document.body.classList.contains("dark")) {
+            document.body.classList.remove("dark");
+        } else {
+            document.body.classList.add("dark");
+        }
+    });
+
+    let colap = document.getElementById("btn-collapse");
+    let Navcolap = document.getElementById("CollpseNav");
+
+    colap.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (Navcolap.classList.contains("w-72")) {
+            Navcolap.classList.remove("w-72");
+            Navcolap.classList.add("w-16");
+        } else {
+            Navcolap.classList.remove("w-16");
+            Navcolap.classList.add("w-72");
+        }
+
+    });
+</script>
+
+</html>
